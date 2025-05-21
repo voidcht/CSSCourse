@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display CSS Property</title>
+    <style>
+      /* for input box on a line */
+      .line-inputbox {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      /* for paragraph and button in single line */
+      .para-inline {
+        display: inline-block;
+        font-size: 17px;
+        width: 280px;
+        vertical-align: middle;
+      }
+
+      .button-inline {
+        vertical-align: middle;
+      }
+
+
+      /* For google */
+
+      .google-image {
+        display: block;
+        width: 50%;
+        margin-left: 250px;
+        margin-bottom: 20px;
+      }
+
+      .shadowed-search-bar {
+        border: none;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 6px 8px;
+        font-size: 12px;
+        color: rgb(189, 185, 185);
+        width: 400px;
+        display: block;
+        margin-left: 200px;
+      }
+
+      /* For Sign up Form */
+      .container {
+        background-color: gray;
+        width: 300px;
+
+      }
+
+      input {
+        margin-bottom: 8px;
+        border-radius: 3px;
+        border-color: gray;
+        border-style: solid;
+        border-width: 1px;
+      }
+
+      .name-input {
+        width: 140px;
+        padding: 8px 8px;
+        font-size: 14px;
+      }
+
+      .email-input {
+        display: block;
+        width: 302px;
+        padding: 8px 8px;
+        font-size: 14px;
+      }
+
+      .signup-button {
+        display: block;
+        width: 320px;
+        border: none;
+        background-color: rgb(79, 79, 226);
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 4px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* Uber request form */
+
+      .text-uber {
+        font-family: Arial;
+      }
+
+      .input-uber {
+        display: block;
+        width: 300px;
+        border: none;
+        border-radius: 1px;
+        background-color: rgba(230, 230, 230, 0.5);
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+
+      .button-uber {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin-right: 12px;
+        margin-top: 12px;
+        border-radius: 1px;
+        border: none;
+        background-color: rgba(230, 230, 230, 0.5);
+        cursor: pointer;
+      }
+
+      .button-requestNow {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Text boxes on separate lines -->
+    <input type="text" placeholder="Name" class="line-inputbox">
+    <input type="text" placeholder="Email" class="line-inputbox">
+
+    <!-- Paragraph and button on a single line -->
+    <p class="para-inline">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+    <button class="button-inline">Yes</button>
+    <button class="button-inline">No</button>
+
+    <!-- Google page -->
+    <img class="google-image" src="public/google.png" alt="google logo">
+    <!-- search bar with no border but with shadow -->
+    <input type="text" placeholder="Search Google or type a URL" class="shadowed-search-bar">
+
+
+    <!-- Sign up form -->
+
+    <input type="text" placeholder="First name" class="name-input">
+    <input type="text" placeholder="Last name" class="name-input">
+    <input type="text" placeholder="Email" class="email-input">
+    <button class="signup-button">Sign Up</button>
+
+
+    <!-- Uber request a ride Form -->
+    <h3 class="text-uber">Request a ride now</h3>
+    <input class="input-uber text-uber" type="text" placeholder="Enter pickup location">
+    <input class="input-uber text-uber" type="text" placeholder="Enter destination">
+    <button class="button-requestNow button-uber text-uber">Request now</button>
+    <button class="button-schedule button-uber text-uber">Schedule for later</button>
+
+  </body>
+
+</html>

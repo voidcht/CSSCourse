@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Mockup Update 1</title>
+    <style>
+      .thumbnail {
+        width: 300px;
+        display: block;
+      }
+
+      .search-bar {
+        font-size: 20px;
+        margin-left: 12px;
+        display: block;
+      }
+
+      .video-title {
+        margin-top: 0;
+      }
+
+      .video-author,
+      .video-stats {}
+
+
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      /* to create nested layout */
+
+      .thumbnail-row {
+        margin-bottom: 12px;
+      }
+
+      .channel-picture-container {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+
+      .channel-picture {
+        width: 100%;
+        border-radius: 40px;
+
+      }
+
+      .video-info {
+        display: inline-block;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- First part with image and search bar -->
+    <input class="search-bar" type="text" placeholder="Search">
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+      </div>
+      <div>
+        <div class="channel-picture-container">
+          <img class="channel-picture" src="public/profilePictures/channel-1.jpeg" alt="channel picture">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+
+          <p class="video-author">
+            Marques Brownlee
+          </p>
+
+          <p class="video-stats">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="video-preview">
+      <img class="thumbnail" src="public/thumbnails/thumbnail-2.webp" alt="thumbnail-2">
+      <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+
+      <p class="video-author">
+        Markiplier
+      </p>
+
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
+
+    </div>
+
+  </body>
+
+</html>

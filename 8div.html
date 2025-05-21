@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div exercises</title>
+    <style>
+      p {
+        margin-top: 0;
+
+      }
+
+      .div-circle {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        /* half of the width to be make it a circle for border-radius */
+        border-radius: 50px;
+      }
+
+      .div-dialog-box {
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
+        width: 300px;
+        padding: 12px 16px;
+        margin-top: 20px;
+      }
+
+
+      /* Twitter text box */
+      .container {
+        width: 500px;
+        margin-bottom: 100px;
+      }
+
+      .profile-picture {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        object-position: left;
+        border-radius: 22px;
+        vertical-align: middle;
+      }
+
+      .content-input {
+        color: rgb(200, 200, 200);
+        padding: 8px 16px;
+        border: none;
+        font-size: 16px;
+        vertical-align: middle;
+      }
+
+      .tweeter-container {
+        border: none;
+        display: inline-block;
+        padding: 12px 12px;
+        border-radius: 4px;
+        box-shadow: 2px 1px 20px rgba(41, 38, 38, 0.2);
+        margin-bottom: 100px;
+      }
+
+
+
+      .tweet-button {
+        border-radius: 16px;
+        cursor: pointer;
+
+        font-weight: bold;
+        font-size: 15px;
+        vertical-align: middle;
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        /* width: 70px; */
+        padding: 8px 16px;
+        transition: box-shadow 0.15s, opacity 0.15s;
+      }
+
+
+      /* Facebook  */
+      .facebook-container {
+        border: none;
+        display: inline-block;
+
+        border-radius: 2px;
+        box-shadow: 2px 1px 20px rgba(41, 38, 38, 0.2);
+        margin-bottom: 16px;
+      }
+
+      .facebook-profile-pic {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        object-position: left;
+        display: block;
+      }
+
+      .div-details {
+        padding: 8px 8px;
+      }
+
+      .facebook-name {
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Arial;
+        margin: 4px 0 6px 0;
+      }
+
+      .facebook-mutual-friends {
+        font-size: 18px;
+        font-family: Arial;
+        margin: 0 0 8px 0;
+        color: rgb(133, 133, 133);
+      }
+
+      .button-facebook-add {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 2px;
+        background-color: rgb(64, 93, 222);
+        color: white;
+      }
+
+
+      /* for Google home page */
+      .google-image {
+
+        width: 450px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .shadowed-search-bar {
+        border: none;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 6px 8px;
+        font-size: 12px;
+        color: rgb(189, 185, 185);
+        width: 600px;
+        margin-bottom: 20px;
+      }
+
+      .div-google-home-page {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- green circle from a div -->
+    <div class="div-circle"></div>
+
+    <!-- dialog box with a div -->
+    <div class="div-dialog-box">
+      <p>Satisfied with our service?</p>
+      <button>Yes</button>
+      <button>No</button>
+    </div>
+
+    <!-- tweeter example with a div -->
+    <h2>Twitter text box</h2>
+    <div class="tweeter-container">
+      <img class="profile-picture" src="public/thumbnails/thumbnail-1.webp" alt="profile picture">
+      <input type="text" class="content-input" placeholder="What's happening?">
+      <button class="tweet-button">Tweet</button>
+    </div>
+
+    <hr>
+    <!-- Facebook friend suggestions -->
+    <div class="facebook-container">
+      <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+      <div class="div-details">
+        <p class="facebook-name">Oliver</p>
+        <p class="facebook-mutual-friends">2 mutual friends</p>
+        <button class="button-facebook-add">Add Friend</button>
+      </div>
+    </div>
+    <div class="facebook-container">
+      <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-2.webp" alt="thumbnail">
+      <div class="div-details">
+        <p class="facebook-name">Oliver</p>
+        <p class="facebook-mutual-friends">2 mutual friends</p>
+        <button class="button-facebook-add">Add Friend</button>
+      </div>
+    </div>
+    <div class="facebook-container">
+      <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+      <div class="div-details">
+        <p class="facebook-name">Oliver</p>
+        <p class="facebook-mutual-friends">2 mutual friends</p>
+        <button class="button-facebook-add">Add Friend</button>
+      </div>
+    </div>
+
+
+    <!-- Google search box with div & centered content -->
+
+    <div class="div-google-home-page">
+      <div>
+        <img class="google-image" src="public/google.png" alt="google logo">
+      </div>
+      <div>
+        <input class="shadowed-search-bar" type="text" placeholder="Search Google or type a URL">
+      </div>
+      <div>
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>
