@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+    </style>
+  </head>
+
+  <!-- padding at the bottom is added to body so that the page is scrollable -->
+
+  <body style="padding-bottom: 1000px;">
+
+
+    <!-- flexbox with two divs -->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      ">
+      <div style="background-color: rgb(181, 222, 236);">div 1</div>
+      <div style="background-color: rgb(231, 232, 231);">div 2</div>
+    </div>
+
+    <!-- flexbox with one taller div - vertically aligned -->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      
+      ">
+      <div style="background-color: rgb(181, 222, 236);">div 1 <p>text in p</p>
+      </div>
+      <div style="background-color: rgb(231, 232, 231);">div 2</div>
+    </div>
+
+    <!-- flexbox with width set for one div & remaining space for the other -->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      
+      ">
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 200px;
+      ">div 1 with 200px width
+      </div>
+      <div style="
+        background-color: rgb(231, 232, 231);
+        flex: 1;
+      ">div 2 with flex 1</div>
+    </div>
+
+
+
+
+    <!-- flexbox with two remaining space divs -->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      
+      ">
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 200px;
+      ">div 1 with 200px width
+      </div>
+      <div style="
+        background-color: rgb(231, 232, 231);
+        flex: 1;
+      ">div 2 with flex 1
+      </div>
+      <div style="
+        background-color: rgb(181, 222, 236);
+        flex: 2;
+      ">div 3 with flex 2
+      </div>
+
+    </div>
+
+
+    <!-- header with flex box -->
+
+    <!-- with horizontally aligned - end -->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color:gray;
+      justify-content:end;
+
+      margin-top: 30px;
+
+      ">
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 100px;
+      ">div 1 - 100px
+      </div>
+      <div style="
+        background-color: rgb(231, 232, 231);
+        width: 100px;
+      ">div 2 - 100px
+      </div>
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 100px;
+      ">div 3 - 100px
+      </div>
+
+
+    </div>
+    <!-- header with horizontal alignment space between -->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color:gray;
+      justify-content:space-between;
+
+      margin-top: 30px;
+
+      ">
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 100px;
+      ">div 1 - 100px
+      </div>
+      <div style="
+        background-color: rgb(231, 232, 231);
+        width: 100px;
+      ">div 2 - 100px
+      </div>
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 100px;
+      ">div 3 - 100px
+      </div>
+
+
+    </div>
+
+    <!-- header with vertical alignment - center -->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color:gray;
+      justify-content:space-between;
+      align-items: center;
+
+      margin-top: 30px;
+
+      ">
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 100px;
+      ">div 1 - 100px
+      </div>
+      <div style="
+        background-color: rgb(231, 232, 231);
+        width: 100px;
+      ">div 2 - 100px
+      </div>
+      <div style="
+        background-color: rgb(181, 222, 236);
+        width: 100px;
+      ">div 3 - 100px
+      </div>
+
+
+    </div>
+
+
+
+
+  </body>
+
+</html>

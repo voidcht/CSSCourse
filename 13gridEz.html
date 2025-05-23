@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exercises</title>
+    <style>
+      /* for the grid */
+      .suggestions-grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        column-gap: 24px;
+        row-gap: 48px;
+      }
+
+
+
+      /* previous Facebook mutual friend styles */
+      p {
+        margin: 0;
+      }
+
+      /* Facebook  */
+      .facebook-container {
+        width: 200px;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 2px 1px 20px rgba(41, 38, 38, 0.2);
+        margin-bottom: 16px;
+        margin-top: 8px;
+
+      }
+
+      .facebook-profile-pic {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        object-position: left;
+      }
+
+      .div-details {
+        padding: 8px 8px;
+      }
+
+      .facebook-name {
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Arial;
+        margin: 4px 0 6px 0;
+      }
+
+      .mutual-friends-row {
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+        column-gap: 6px;
+
+      }
+
+      .facebook-mutual-friends {
+        /* display: inline-block; */
+        font-size: 18px;
+        font-family: Arial;
+        color: rgb(133, 133, 133);
+      }
+
+      .button-facebook-add {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(64, 93, 222);
+        color: white;
+      }
+
+      .mutual-friend-pic {
+        height: 30px;
+        width: 30px;
+        border: none;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: right;
+        vertical-align: middle;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="suggestions-grid">
+
+      <div class="facebook-container">
+        <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+        <div class="div-details">
+          <p class="facebook-name">Oliver</p>
+          <!-- adding mutual friend profile pic -->
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+            <p class="facebook-mutual-friends">2 mutual friends</p>
+          </div>
+
+          <button class="button-facebook-add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="facebook-container">
+        <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+        <div class="div-details">
+          <p class="facebook-name">Oliver</p>
+          <!-- adding mutual friend profile pic -->
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+            <p class="facebook-mutual-friends">2 mutual friends</p>
+          </div>
+
+          <button class="button-facebook-add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="facebook-container">
+        <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+        <div class="div-details">
+          <p class="facebook-name">Oliver</p>
+          <!-- adding mutual friend profile pic -->
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+            <p class="facebook-mutual-friends">2 mutual friends</p>
+          </div>
+
+          <button class="button-facebook-add">Add Friend</button>
+        </div>
+      </div>
+      <div class="facebook-container">
+        <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+        <div class="div-details">
+          <p class="facebook-name">Oliver</p>
+          <!-- adding mutual friend profile pic -->
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+            <p class="facebook-mutual-friends">2 mutual friends</p>
+          </div>
+
+          <button class="button-facebook-add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="facebook-container">
+        <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+        <div class="div-details">
+          <p class="facebook-name">Oliver</p>
+          <!-- adding mutual friend profile pic -->
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+            <p class="facebook-mutual-friends">2 mutual friends</p>
+          </div>
+
+          <button class="button-facebook-add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="facebook-container">
+        <img class="facebook-profile-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+        <div class="div-details">
+          <p class="facebook-name">Oliver</p>
+          <!-- adding mutual friend profile pic -->
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-pic" src="public/thumbnails/thumbnail-1.webp" alt="thumbnail">
+            <p class="facebook-mutual-friends">2 mutual friends</p>
+          </div>
+
+          <button class="button-facebook-add">Add Friend</button>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

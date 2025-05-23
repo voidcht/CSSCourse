@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice</title>
+  </head>
+
+  <!-- adding some space in the body at the bottom - to view better  -->
+
+  <body style="padding-bottom: 200px;">
+    <!-- A grid with two columns of 100px and 200px width -->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 200px;
+      margin-bottom: 2px;
+      
+      ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightsalmon;">div 2
+        <p>Text is this</p>
+      </div>
+    </div>
+
+    <!-- grid with 3 columns -->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 200px 400px;
+      margin-bottom: 2px;
+      
+      ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightsalmon;">div 2
+        <p>Text is this</p>
+      </div>
+      <div style="background-color: lightblue;">div 1</div>
+
+    </div>
+
+    <!-- grid with more columns than specified - wraps around -->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 200px;
+      margin-bottom: 2px;
+      ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightsalmon;">div 2</div>
+      <div style="background-color: lightblue;">div 1</div>
+    </div>
+
+    <!-- grid with free space column -->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      margin-bottom: 2px;
+      ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightsalmon;">1fr</div>
+      <div style="background-color: lightblue;">div3</div>
+      <div style="background-color: lightsalmon;">div4</div>
+    </div>
+
+    <!-- grid with 2 free space columns -->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+      margin-bottom: 2px;
+      ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightsalmon;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+      <div style="background-color: lightsalmon;">div4</div>
+    </div>
+
+    <!-- grid with space inbetween - columns with same width but resizes with size of the window-->
+    <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+      margin-bottom: 2px;
+      ">
+      <div style="background-color: lightblue; height: 50px;">1fr</div>
+      <div style="background-color: lightsalmon; height: 50px;">1fr</div>
+      <div style="background-color: lightblue; height: 50px;">1fr</div>
+      <div style="background-color: lightsalmon;  height: 50px;">1fr</div>
+      <div style="background-color: lightblue; height: 50px;">1fr</div>
+    </div>
+
+
+
+
+
+  </body>
+
+</html>

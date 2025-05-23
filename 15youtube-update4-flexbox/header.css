@@ -1,0 +1,42 @@
+.search-bar
+{
+  font-size: 20px;
+  margin-left: 12px;
+  /* no need of making the search bar 'block' anymore -use flexbox */
+  /* display: block; */
+}
+
+
+.header
+{
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section-header
+{
+  background-color: lightseagreen;
+  width: 150px;
+}
+
+/* only middle sectin resizes  */
+.middle-section-header
+{
+  background-color: lightskyblue;
+  flex: 1;
+  /* space between section is set here */
+  margin-left: 80px;
+  margin-right: 16px;
+  /* max width of the middle section so that it stops growing from here */
+  max-width: 500px;
+}
+
+.right-section-header
+{
+  background-color: lightslategrey;
+  width: 250px;
+
+}
