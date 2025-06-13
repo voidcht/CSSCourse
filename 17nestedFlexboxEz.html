@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested flexbox exercises</title>
+    <link rel="stylesheet" href="/17nestedFlexboxEx.css">
+
+  <body>
+    <!-- first example - first element inside flexbox is also a flexbox -->
+    <div class="flexbox">
+      <div class="lightpink">
+        <div class="content">
+          item1
+        </div>
+      </div>
+      <div class="lightblue"></div>
+    </div>
+
+    <!-- second example - more content inside second element inside flexbox -->
+    <div class="flexbox">
+      <div class="lightpink">
+
+      </div>
+      <div class="lightblue">
+        <!-- normal <div> element with text -->
+        <div>
+          row1
+        </div>
+        <!-- second row is also a flexbox with 2 content inside it -->
+        <div class="row-2">
+          <div class="content">
+            item1
+          </div>
+          <div class="content">
+            item2
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>

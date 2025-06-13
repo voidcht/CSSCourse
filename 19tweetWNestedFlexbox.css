@@ -1,0 +1,192 @@
+body
+{
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.container
+{
+  display: flex;
+  width: 480px;
+  /* background-color: aquamarine; */
+  margin: 8px 8px;
+}
+
+.image-column
+{
+  /* background-color: grey; */
+}
+
+.profile-picture
+{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.right-column
+{
+  flex: 1;
+  margin-left: 12px;
+}
+
+.header-row
+{
+  /* background-color: bisque; */
+  display: flex;
+  font-size: 14px;
+}
+
+.name
+{
+  font-weight: bold;
+  margin-right: 6px;
+
+}
+
+.username
+{
+  color: gray;
+}
+
+.tweet-row
+{
+  /* background-color: burlywood; */
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.video-attachment-row
+{
+
+  border-style: solid;
+  border-color: rgb(202, 202, 202);
+  border-width: 1px;
+  border-radius: 6px;
+
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+
+}
+
+.video-preview
+{
+  width: 120px;
+  height: 120px;
+  background-color: rgb(231, 230, 230);
+
+}
+
+.video-description
+{
+  flex: 1;
+  padding: 10px 0 10px 10px;
+}
+
+.link
+{
+  color: grey;
+}
+
+.video-title
+{
+  margin-top: 4px;
+}
+
+
+
+/* answer styles */
+/* div
+{
+  font-family: Arial;
+} */
+
+.tweet
+{
+  display: flex;
+  flex-direction: row;
+  width: 420px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.profile-picture-column
+{
+  margin-right: 10px;
+}
+
+.profile-picture-answer
+{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.tweet-column
+{
+  flex: 1;
+}
+
+.tweet-header
+{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.tweet-author
+{
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tweet-author-handle
+{
+  color: rgb(111, 111, 111);
+}
+
+.tweet-content
+{
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.video-preview-answer
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.thumbnail-column
+{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(220, 220, 220);
+  margin-right: 10px;
+}
+
+.video-info-column
+{
+  flex: 1;
+}
+
+.video-website
+{
+  color: rgb(111, 111, 111);
+  margin-bottom: 3px;
+}
+
+.video-title
+{
+  line-height: 22px;
+}

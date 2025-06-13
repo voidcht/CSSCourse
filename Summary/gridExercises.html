@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exercises</title>
+    <style>
+      .facebook-mutual-friend-grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        column-gap: 24px;
+        row-gap: 16px;
+      }
+
+      .friend-suggestion {
+        width: 200px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        vertical-align: top;
+        margin-right: 15px;
+
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 12px;
+      }
+
+      .name {
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 8px;
+        margin-bottom: 5px;
+      }
+
+      .mutual-friends-row {
+        display: grid;
+        grid-template-columns: 32px 1fr;
+        align-items: center;
+        margin-left: 8px;
+        margin-bottom: 10px;
+      }
+
+      .mutual-friend-image {
+        width: 28px;
+        height: 28px;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 14px;
+        margin-right: 8px;
+      }
+
+      .mutual-friend-text {
+        color: rgb(71, 71, 71);
+        font-size: 20px;
+      }
+
+      .facebook-add-button {
+        background-color: rgb(24, 119, 242);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Lesson 11 - answers -->
+
+    <!-- Facebook Friends Suggestions -->
+    <div class="facebook-mutual-friend-grid">
+      <div class="friend-suggestion">
+        <img class="profile-image" src="/public/cat1.avif" alt="profile-image">
+        <div class="name">Oliver</div>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-image" src="/public/cat2.jpg" alt="profile-picture">
+          <div class="mutual-friend-text">2 mutual friends</div>
+        </div>
+        <button class="facebook-add-button">Add Friend</button>
+
+      </div>
+      <div class="friend-suggestion">
+        <img class="profile-image" src="/public/cat2.jpg" alt="profile-image">
+        <div class="name">Oliver</div>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-image" src="/public/cat3.jpg" alt="profile-picture">
+          <div class="mutual-friend-text">5 mutual friends</div>
+        </div>
+        <button class="facebook-add-button">Add Friend</button>
+
+      </div>
+      <div class="friend-suggestion">
+        <img class="profile-image" src="/public/cat4.jpg" alt="profile-image">
+        <div class="name">Oliver</div>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-image" src="/public/cat1.avif" alt="profile-picture">
+          <div class="mutual-friend-text">2 mutual friends</div>
+        </div>
+        <button class="facebook-add-button">Add Friend</button>
+
+      </div>
+      <div class="friend-suggestion">
+        <img class="profile-image" src="/public/cat1.avif" alt="profile-image">
+        <div class="name">Oliver</div>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-image" src="/public/cat2.jpg" alt="profile-picture">
+          <div class="mutual-friend-text">2 mutual friends</div>
+        </div>
+        <button class="facebook-add-button">Add Friend</button>
+
+      </div>
+      <div class="friend-suggestion">
+        <img class="profile-image" src="/public/cat1.avif" alt="profile-image">
+        <div class="name">Oliver</div>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-image" src="/public/cat2.jpg" alt="profile-picture">
+          <div class="mutual-friend-text">2 mutual friends</div>
+        </div>
+        <button class="facebook-add-button">Add Friend</button>
+
+      </div>
+      <div class="friend-suggestion">
+        <img class="profile-image" src="/public/cat1.avif" alt="profile-image">
+        <div class="name">Oliver</div>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-image" src="/public/cat2.jpg" alt="profile-picture">
+          <div class="mutual-friend-text">2 mutual friends</div>
+        </div>
+        <button class="facebook-add-button">Add Friend</button>
+
+      </div>
+
+
+    </div>
+
+  </body>
+
+</html>

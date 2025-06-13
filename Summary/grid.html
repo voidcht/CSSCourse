@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary for CSS Grid</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 100px 200px 1fr;
+        row-gap: 10px;
+        column-gap: 5px;
+        /* vertical alignment */
+        align-items: center;
+      }
+
+      .column-1 {
+        background-color: yellowgreen;
+      }
+
+      .column-2 {
+        background-color: green;
+      }
+
+      .cat-image {
+        /* to take the column's defined width */
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- without using 'inline-block', for the 'display' CSS property to
+ make elements inside a container to place side by side, 
+ with 'grid', you can define how many columns in the outer container 
+ and each columns width for each row -->
+
+    <!-- grids keep vertical alignment perfectly and the space between columns
+  can be adjusted easily - unlike with 'inline-block' -->
+
+    <div class="grid">
+      <div class="column-1">Column 1</div>
+      <div class="column-2">Column 2</div>
+      <div class="column-1">Column with free space - fr </div>
+      <div class="column-2">Column 2</div>
+      <div><img class="cat-image" src="/public/cat1.avif" alt="cat image"></div>
+    </div>
+  </body>
+
+</html>

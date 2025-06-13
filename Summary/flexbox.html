@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Summary</title>
+    <style>
+      .flexbox-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .column-1 {
+        background-color: lightblue;
+      }
+
+      .column-2 {
+        background-color: lightcoral;
+        width: 250px;
+      }
+
+      .column-3 {
+        background-color: lightblue;
+        flex: 1;
+      }
+
+      .column-4 {
+        background-color: lightcoral;
+        flex: 2;
+      }
+
+      /* with justify-content for flexbox */
+      .flexbox-spacearound {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Without specifying the width for each column in the container,-as with Grid, with 'flex' value for the 'display' CSS property,
+  and the 'width' or 'flex' values for column width is specified in 
+  individual columns inside-->
+
+    <div class="flexbox-container">
+      <div class="column-1">Column 1</div>
+      <div class="column-2">Column 1</div>
+      <div class="column-3">Flex 1</div>
+      <div class="column-4">Flex 2</div>
+
+    </div>
+
+    <!-- without setting the width for columns, the space between columns can be
+     set with flexbox -->
+    <div class="flexbox-spacearound">
+      <div>Column 1 with no width specified</div>
+      <div>Column 2 still same</div>
+      <div>Column 2 same</div>
+    </div>
+
+  </body>
+
+</html>

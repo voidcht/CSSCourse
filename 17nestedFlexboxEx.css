@@ -1,0 +1,38 @@
+/* styles for first example  */
+.flexbox
+{
+  display: flex;
+  height: 80px;
+  margin-bottom: 100px;
+}
+
+.lightpink
+{
+  width: 100px;
+  background-color: lightpink;
+  /* another flexbox - so we can align content inside it */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content
+{
+  color: white;
+  background-color: black;
+}
+
+.lightblue
+{
+  width: 200px;
+  ;
+  background-color: lightblue;
+}
+
+
+/* more styles for second example */
+.row-2
+{
+  display: flex;
+  justify-content: space-between;
+}

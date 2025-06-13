@@ -1,0 +1,184 @@
+body
+{
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+.inbox-container
+{
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 500px;
+  /* background-color: aliceblue; */
+}
+
+.title
+{
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 16px;
+  /* background-color: aqua; */
+
+}
+
+.message-container
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  /* background-color: aquamarine; */
+
+}
+
+.gmail-account-picture
+{
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.column2
+{
+  flex: 1;
+  margin-left: 10px;
+  /* background-color: brown; */
+
+
+}
+
+.row1
+{
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(205, 205, 223); */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.email-sender
+{
+  font-weight: bold;
+}
+
+.time
+{
+  width: 80px;
+  font-size: 13px;
+  color: gray;
+  text-align: end;
+  /* background-color: bisque; */
+}
+
+.email-title
+{
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.email-content
+{
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 4px;
+
+}
+
+
+
+/* answer styles */
+div
+{
+  font-family: Arial;
+}
+
+.container
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* width is fixed */
+  width: 400px;
+  /* shadow for the container */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  /* space from top and left of the page */
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.inbox-label
+{
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+  margin-bottom: 20px;
+}
+
+/* styles for emails inside the inbox */
+.email
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* image is inside a container */
+.sender-picture-container
+{
+  margin-right: 10px;
+}
+
+/* styles for the image element for picture */
+.sender-picture
+{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* other information of the email */
+.email-content
+{
+  flex: 1;
+}
+
+/* first row of the email info with email sender and time */
+.email-header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.sender-name
+{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.send-time
+{
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+}
+
+/* second row of the email info with subject */
+.subject
+{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* third row of the email info with email content preview */
+.message
+{
+  color: rgb(120, 120, 120);
+}

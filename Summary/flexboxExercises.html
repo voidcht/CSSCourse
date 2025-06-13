@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Exercises</title>
+    <style>
+      /* header example with items at the ends */
+      .flexbox-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(150, 150, 150);
+        height: 50px;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .lightpink {
+        background-color: lightpink;
+      }
+
+
+
+
+      /* notifications box example */
+      div {
+        font-family: Arial;
+      }
+
+      .container {
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(200, 200, 200);
+        width: 300px;
+        border-radius: 6px;
+      }
+
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .notifications {
+        background-color: rgb(49, 109, 245);
+        color: white;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+
+      /* header advanced styles */
+
+
+      .header {
+        background-color: rgb(120, 82, 178);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 50px;
+      }
+
+      .home-link {
+        font-weight: bold;
+      }
+
+      .text-box {
+        width: 500px;
+        border: none;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 30px;
+        border-radius: 15px;
+        padding-left: 20px;
+      }
+
+      .header-button {
+        background-color: rgb(120, 82, 178);
+        color: white;
+        font-size: 16px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 2px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+
+      /* styles for Twitter follow suggestions */
+      .profile-picture {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-right: 16px;
+      }
+
+      p {
+        margin: 0 0 2px 0;
+        font-size: 18px;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+
+      .username {
+        color: rgb(94, 92, 92);
+        font-size: 14px;
+      }
+
+      .category {
+        color: gray;
+        font-size: 12px;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: aliceblue; */
+        margin: 10px 8px;
+      }
+
+      .info {
+        width: 150px;
+      }
+
+      .Twitter-follow-button {
+        background-color: rgb(29, 155, 240);
+        border: none;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-family: Arial;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header example -->
+    <div class="flexbox-header">
+      <div class="lightpink">item1</div>
+      <div class="lightpink">item2</div>
+    </div>
+
+    <!-- notifications box -->
+    <div class="container">
+      <div class="flexbox">
+        <div>Home</div>
+        <div class="notifications">14</div>
+      </div>
+      <div class="flexbox">
+        <div>Notifications</div>
+        <div class="notifications">3</div>
+      </div>
+      <div class="flexbox">
+        <div>Messages</div>
+        <div class="notifications">5</div>
+      </div>
+    </div>
+
+
+    <!-- header advanced -->
+    <div class="header">
+      <div class="home-link">Home</div>
+      <input class="text-box" placeholder="Search">
+      <button class="header-button">Download</button>
+    </div>
+
+
+    <!-- twitter follow suggestions with flexbox -->
+    <div class="row">
+      <img class="profile-picture" src="/public/cat1.avif" alt="profile image">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <p class="username">The cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="Twitter-follow-button">Follow</button>
+    </div>
+    <div class="row">
+      <img class="profile-picture" src="/public/cat2.jpg" alt="profile image">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <p class="username">The cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="Twitter-follow-button">Follow</button>
+    </div>
+    <div class="row">
+      <img class="profile-picture" src="/public/cat3.jpg" alt="profile image">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <p class="username">The cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="Twitter-follow-button">Follow</button>
+    </div>
+    <div class="row">
+      <img class="profile-picture" src="/public/cat4.jpg" alt="profile image">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <p class="username">The cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="Twitter-follow-button">Follow</button>
+    </div>
+    <div class="row">
+      <img class="profile-picture" src="/public/cat3.jpg" alt="profile image">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <p class="username">The cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="Twitter-follow-button">Follow</button>
+    </div>
+    <div class="row">
+      <img class="profile-picture" src="/public/cat1.avif" alt="profile image">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <p class="username">The cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="Twitter-follow-button">Follow</button>
+    </div>
+  </body>
+
+</html>
