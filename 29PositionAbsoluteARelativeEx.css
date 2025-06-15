@@ -1,0 +1,179 @@
+body
+{
+  height: 3000px;
+  background-color: rgb(21, 21, 21);
+}
+
+
+/* styles for the window with a close button */
+
+.window
+{
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  position: relative;
+}
+
+.close-button
+{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  width: 28px;
+  height: 28px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* styles for the sticker window on bottom right corner of the window */
+.sticker-window
+{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(153, 153, 153, 0.2);
+  height: 180px;
+  width: 320px;
+}
+
+/* close button on the fixed window on top left corner - with negative position */
+.close-button-sticker
+{
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  background-color: rgb(182, 180, 180);
+  color: rgb(56, 55, 55);
+  border: none;
+  border-radius: 14px;
+  width: 28px;
+  height: 28px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* time stamp on the sticker window on bottom right corner */
+.time-stamp
+{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+  font-family: Arial;
+}
+
+
+
+/* styles for the shopping for clothing design */
+.clothing-image
+{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cloth-container
+{
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+}
+
+.discount-tag
+{
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 4px 6px;
+}
+
+.bottom-section
+{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart-button
+{
+  font-size: 12px;
+  font-family: Arial;
+  padding: 6px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2px;
+}
+
+/* styles for the answer for dress design */
+.product-container
+{
+  position: relative;
+  display: inline-block;
+}
+
+.product-image
+{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.promotion
+{
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.bottom-overlay
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart-button
+{
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

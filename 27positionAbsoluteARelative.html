@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute and Relative Practice</title>
+  </head>
+
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+  ">
+    <!-- header should be sticked to the top of the page - with 'fixed' position-->
+    <div style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+        z-index: 100;
+    ">header</div>
+
+    <!-- side bar -->
+    <!-- inside the sidebar (of fixed position) there is an element
+      with absolute position now -->
+    <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    top: 50px;
+    width: 100px;
+    z-index:1;
+     ">side bar
+
+      <div style="
+      position: absolute;
+      left: 10px;
+      top: 40px ;
+      background-color: red;
+      color: white;
+      ">
+        absolute
+      </div>
+      <!-- a close button inside the sidebar -->
+      <div style="
+      position: absolute;
+      right: 2px;
+      top: 2px ; 
+      background-color: red;
+      color: white;
+      ">
+        x
+      </div>
+
+
+    </div>
+
+
+    <!-- divs with absolute position -->
+    <div style="
+      position: absolute;
+      left: 200px;
+      top: 80px ;
+      background-color: rgb(126, 101, 32);
+      color: white;
+    ">
+      absolute position by page
+    </div>
+
+    <!-- other content are normal with 'static' position -->
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+      ">div1</div>
+
+    <!-- with relative position for the container and 
+     absolute element inside it -->
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+      position: relative;
+
+    ">div2
+      <div style="
+      position: absolute;
+      left: 20px;
+      top: 40px ;
+      background-color: red;
+      color: white;
+      ">
+        absolute relative to container
+      </div>
+    </div>
+
+
+    <!-- video thumbnail and the duration using relative & absolute position -->
+    <div style="
+      background-color: lightpink;
+      height: 100px;
+      width: 150px;
+      position: relative;
+      margin-top: 20px;
+      margin-left: 200px;
+     ">
+      <div style="
+        font-size: 12px;
+        background-color: black;
+        color: white;
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+      ">5.03</div>
+
+    </div>
+  </body>
+
+</html>
