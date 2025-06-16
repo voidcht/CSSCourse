@@ -9,5 +9,7 @@
  {
    margin: 0;
    padding-top: 70px;
-   padding-left: 80px;
+   padding-left: 90px;
+   padding-right: 24px;
+   background-color: rgb(243, 243, 243);
  }

@@ -114,13 +114,60 @@ we use a pseudo class of CSS */
   margin-left: -1px;
   margin-right: 10px;
   cursor: pointer;
+
+  /* to place the tooltip */
+  position: relative;
 }
 
 .search-icon
 {
   height: 25px;
-  /* to set the vertical alignment perfectly */
-  margin-top: 4px;
+
+}
+
+/* to add the tooltip to search buttons  */
+.search-button,
+.voice-search-button,
+.header-icon-container
+{
+  position: relative;
+  /* to center the content inside it */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* tooltip inside the search button */
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.header-icon-container .tooltip
+{
+  font-family: Arial;
+  position: absolute;
+  bottom: -25px;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  /* to make the tooltip invisible */
+  opacity: 0;
+  /* add transition for opacity change */
+  transition: opacity 0.15s;
+  /* remove hovering events on the tooltip itself */
+  pointer-events: none;
+  /* avoid text from wrapping aroung - to get into a line */
+  white-space: nowrap;
+
+}
+
+/* to make the tooltip visible when hovered over the search button */
+/* target tooltip inside search button when hovered over search button */
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.header-icon-container:hover .tooltip
+{
+  opacity: 1;
 }
 
 /* styles for voice search button */
@@ -133,13 +180,12 @@ we use a pseudo class of CSS */
   background-color: rgb(250, 248, 248);
   cursor: pointer;
 
+
 }
 
 .voice-search-icon
 {
   height: 24px;
-  /* to set the vertical alignment perfectly */
-  margin-top: 4px;
 }
 
 

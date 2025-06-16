@@ -6,4 +6,41 @@
   top: 55px;
   background-color: white;
   width: 72px;
+  /* to get top of header */
+  z-index: 200;
+  padding-top: 5px;
+}
+
+/* styles for the container box for the icon and text */
+.sidebar-link
+{
+  height: 64px;
+  /* to make the horizontal and vertical alignment to center for the content inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* to place the content on top of each other */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* hover style */
+.sidebar-link:hover
+{
+  background-color: rgb(243, 242, 242);
+
+}
+
+/* for <img> elements inside the sidebar  */
+.sidebar img
+{
+  height: 24px;
+}
+
+/* for the icon text below icon  - <div> inside the sidebar*/
+.sidebar div
+{
+  font-family: Arial;
+  font-size: 8px;
+  margin-top: 4px;
 }
