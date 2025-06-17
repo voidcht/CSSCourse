@@ -120,6 +120,7 @@
 {}
 
 /* grid container */
+/* this is changed to make the video grid responsive */
 .video-grid
 {
   display: grid;
@@ -127,6 +128,38 @@
   column-gap: 16px;
   row-gap: 48px;
 }
+
+/* For responsive video grid */
+/* from zero to 750px of screen size - 2 columns */
+@media (max-width:750px)
+{
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* for the mid values of screen size - 3 columns */
+@media (min-width:751px) and (max-width: 999px)
+{
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* for equal or more than 1000px of screen size - 4 columns */
+@media (min-width:1000px)
+{
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+
 
 
 
@@ -140,7 +173,8 @@
   right: 4px;
   font-size: 12px;
   font-weight: 500;
-  font-family: Roboto, Arial;
+  font-family: Roboto,
+    Arial;
   padding: 4px 3px;
   border-radius: 2px;
 }
