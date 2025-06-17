@@ -159,6 +159,7 @@ we use a pseudo class of CSS */
   /* avoid text from wrapping aroung - to get into a line */
   white-space: nowrap;
 
+
 }
 
 /* to make the tooltip visible when hovered over the search button */

@@ -23,8 +23,15 @@
       <!-- left section of the header -->
       <div class="left-section-header">
         <!-- menu icon and the youtube logo -->
-        <img class="hamberger-menu" src="public/icons/hamburger-menu.svg" alt="menu icon">
-        <img class="youtube-logo" src="public/icons/youtube-logo.svg" alt="youtube logo">
+        <!-- a menu icon container added to add the tooltip -->
+        <div class="header-icon-container">
+          <img class="hamberger-menu" src="public/icons/hamburger-menu.svg" alt="menu icon">
+          <div class="tooltip">Menu</div>
+        </div>
+        <!-- adding a link to the Youtube logo -->
+        <a href="https://www.youtube.com">
+          <img class="youtube-logo" src="public/icons/youtube-logo.svg" alt="youtube logo">
+        </a>
       </div>
 
       <!-- middle section with search bar- adjusts with screen width -->
@@ -123,7 +130,24 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture-container">
-            <img class="channel-picture" src="public/profilePictures/channel-1.jpeg" alt="channel picture">
+            <!-- to include the tooltip - a wrapper for the channel picture -->
+            <div class="channel-picture-wrapper">
+              <a href="https://youtube.com/c/mkbhd" target="_blank">
+                <img class="channel-picture" src="public/profilePictures/channel-1.jpeg" alt="channel picture">
+              </a>
+              <!-- tooltip for the channel -->
+              <div class="channel-tooltip">
+                <img class="channel-picture-tooltip" src="public/profilePictures/channel-1.jpeg" alt="channel picture">
+                <div class="channel-info">
+                  <p class="channel-author-tooltip">
+                    Marques Brownlee
+                  </p>
+                  <p class="channel-stats-tooltip">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -152,7 +176,22 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture-container">
-            <img class="channel-picture" src="public/profilePictures/channel-2.jpeg" alt="channel picture">
+            <div class="channel-picture-wrapper">
+              <img class="channel-picture" src="public/profilePictures/channel-2.jpeg" alt="channel picture">
+              <!-- tooltip for the channel -->
+              <div class="channel-tooltip">
+                <img class="channel-picture-tooltip" src="public/profilePictures/channel-2.jpeg" alt="channel picture">
+                <div class="channel-info">
+                  <p class="channel-author-tooltip">
+                    Markiplier
+                  </p>
+                  <p class="channel-stats-tooltip">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -181,7 +220,24 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture-container">
-            <img class="channel-picture" src="public/profilePictures/channel-3.jpeg" alt="channel picture">
+            <!-- to include the tooltip - a wrapper for the channel picture -->
+            <div class="channel-picture-wrapper">
+              <img class="channel-picture" src="public/profilePictures/channel-3.jpeg" alt="channel picture">
+              <!-- tooltip for the channel -->
+              <div class="channel-tooltip">
+                <img class="channel-picture-tooltip" src="public/profilePictures/channel-3.jpeg" alt="channel picture">
+                <div class="channel-info">
+                  <p class="channel-author-tooltip">
+                    SSSniperWolf
+                  </p>
+                  <p class="channel-stats-tooltip">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -210,7 +266,24 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture-container">
-            <img class="channel-picture" src="public/profilePictures/channel-4.jpeg" alt="channel picture">
+            <!-- to include the tooltip - a wrapper for the channel picture -->
+            <div class="channel-picture-wrapper">
+              <img class="channel-picture" src="public/profilePictures/channel-4.jpeg" alt="channel picture">
+              <!-- tooltip for the channel -->
+              <div class="channel-tooltip">
+                <img class="channel-picture-tooltip" src="public/profilePictures/channel-4.jpeg" alt="channel picture">
+                <div class="channel-info">
+                  <p class="channel-author-tooltip">
+                    Veritasium
+                  </p>
+                  <p class="channel-stats-tooltip">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -239,7 +312,25 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture-container">
-            <img class="channel-picture" src="public/profilePictures/channel-5.jpeg" alt="channel picture">
+            <!-- to include the tooltip - a wrapper for the channel picture -->
+            <div class="channel-picture-wrapper">
+              <img class="channel-picture" src="public/profilePictures/channel-5.jpeg" alt="channel picture">
+              <!-- tooltip for the channel -->
+              <div class="channel-tooltip">
+                <img class="channel-picture-tooltip" src="public/profilePictures/channel-5.jpeg" alt="channel picture">
+                <div class="channel-info">
+                  <p class="channel-author-tooltip">
+                    CS Dojo
+                  </p>
+                  <p class="channel-stats-tooltip">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -269,7 +360,26 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture-container">
-            <img class="channel-picture" src="public/profilePictures/channel-6.jpeg" alt="channel picture">
+            <!-- to include the tooltip - a wrapper for the channel picture -->
+            <div class="channel-picture-wrapper">
+              <img class="channel-picture" src="public/profilePictures/channel-6.jpeg" alt="channel picture">
+              <!-- tooltip for the channel -->
+              <div class="channel-tooltip">
+                <img class="channel-picture-tooltip" src="public/profilePictures/channel-6.jpeg" alt="channel picture">
+                <div class="channel-info">
+                  <p class="channel-author-tooltip">
+                    MrBeast
+                  </p>
+                  <p class="channel-stats-tooltip">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -298,7 +408,26 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture-container">
-            <img class="channel-picture" src="public/profilePictures/channel-7.jpeg" alt="channel picture">
+            <!-- to include the tooltip - a wrapper for the channel picture -->
+            <div class="channel-picture-wrapper">
+              <img class="channel-picture" src="public/profilePictures/channel-7.jpeg" alt="channel picture">
+              <!-- tooltip for the channel -->
+              <div class="channel-tooltip">
+                <img class="channel-picture-tooltip" src="public/profilePictures/channel-7.jpeg" alt="channel picture">
+                <div class="channel-info">
+                  <p class="channel-author-tooltip">
+                    RealLifeLove
+                  </p>
+                  <p class="channel-stats-tooltip">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
           <div class="video-info">
             <p class="video-title">
