@@ -130,7 +130,9 @@
 }
 
 /* For responsive video grid */
-/* from zero to 750px of screen size - 2 columns */
+
+/* From zero to 750px of screen size - 2 columns */
+/* < 750px */
 @media (max-width:750px)
 {
   .video-grid
@@ -140,6 +142,7 @@
 }
 
 /* for the mid values of screen size - 3 columns */
+/* 751px - 999px */
 @media (min-width:751px) and (max-width: 999px)
 {
   .video-grid
@@ -149,13 +152,28 @@
 }
 
 /* for equal or more than 1000px of screen size - 4 columns */
+/* > 1000px */
 @media (min-width:1000px)
 {
   .video-grid
   {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  /* increasing the font-size for larger screens */
+  .video-author,
+  .video-info
+  {
+    font-size: 14px;
+  }
+
+  .video-title
+  {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
+
 
 
 
