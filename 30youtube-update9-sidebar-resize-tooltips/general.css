@@ -5,11 +5,29 @@
    margin-bottom: 0;
  }
 
- body
+ @media (max-width: 1200px)
  {
-   margin: 0;
-   padding-top: 70px;
-   padding-left: 90px;
-   padding-right: 24px;
-   background-color: rgb(243, 243, 243);
+   body
+   {
+     margin: 0;
+     padding-top: 70px;
+     padding-left: 90px;
+     padding-right: 24px;
+     background-color: rgb(243, 243, 243);
+   }
+
+
+ }
+
+ @media (min-width:1200.1px)
+ {
+   body
+   {
+     margin: 0;
+     padding-top: 70px;
+     padding-left: 164px;
+     padding-right: 24px;
+     background-color: rgb(243, 243, 243);
+
+   }
  }
