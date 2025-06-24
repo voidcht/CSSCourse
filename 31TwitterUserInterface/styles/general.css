@@ -1,10 +1,37 @@
+html,
 body
 {
   font-family: Arial;
   background-color: black;
   color: white;
   font-size: 14px;
+  /* new styles for body and html for the footer to work */
+  margin: 0;
+  height: 100%;
 }
+
+/* new container for the page */
+.page-wrapper
+{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+
+/* where content is - until the footer -takes the full window height*/
+main
+{
+  flex: 1;
+  /* to vertically align content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: purple; */
+}
+
 
 button
 {

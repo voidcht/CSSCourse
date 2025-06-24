@@ -1,7 +1,7 @@
 .landing-container
 {
   /* to center on the page */
-  margin: auto;
+  /* margin: auto; */
 
   width: 250px;
   display: flex;
