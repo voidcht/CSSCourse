@@ -1,0 +1,111 @@
+.overlay
+{
+  background-color: rgba(91, 112, 131, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+.signin-window
+{
+  width: 240px;
+  background-color: black;
+  color: white;
+  padding: 8px 92px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.close-button
+{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 16px;
+  font-family: Arial;
+  border-radius: 19px;
+  padding: 9px 12.5px;
+  cursor: pointer;
+}
+
+.close-button:hover
+{
+  background-color: rgb(36, 36, 36);
+}
+
+.logo-window
+{
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image-window
+{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.divider-text-overlay
+{
+  position: absolute;
+  font-size: 14px;
+  top: -4px;
+  left: 47%;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(199, 198, 198);
+  padding: 2px 4px;
+  z-index: 600;
+}
+
+.signin-window .title
+{
+  font-size: 28px;
+  font-weight: 400;
+  font-family: Tahoma;
+}
+
+input
+{
+  background-color: black;
+  color: white;
+  border: 0.01px solid rgba(77, 76, 76, 0.9);
+  width: 90%;
+  border-radius: 8px;
+  padding: 18px 8px;
+  font-size: 14px;
+  margin-bottom: 24px;
+
+}
+
+
+.next-button
+{
+  color: black;
+  font-weight: 600;
+}
+
+.forgot-password-button
+{
+  font-weight: 800;
+  margin-bottom: 36px;
+}
+
+.signup-text
+{
+  color: gray;
+  margin-bottom: 32px;
+}
