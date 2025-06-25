@@ -78,6 +78,22 @@
   font-family: Tahoma;
 }
 
+.input-prefix
+{
+  display: inline-block;
+
+}
+
+.innerlabel
+{
+  position: absolute;
+  padding-left: 8px;
+  padding-top: 4px;
+  font-size: 10px;
+  color: rgb(29, 155, 240);
+  opacity: 0;
+}
+
 input
 {
   background-color: black;
@@ -88,9 +104,19 @@ input
   padding: 18px 8px;
   font-size: 14px;
   margin-bottom: 24px;
-
 }
 
+input:focus
+{
+  border-color: rgb(29, 155, 240);
+  /* to change the border color */
+  outline: none !important;
+}
+
+.signin-input:focus .innerlabel
+{
+  opacity: 1;
+}
 
 .next-button
 {

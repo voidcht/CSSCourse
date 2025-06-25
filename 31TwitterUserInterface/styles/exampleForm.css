@@ -1,0 +1,91 @@
+/* import Google font - Convergence */
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Roboto:wght@400;500;700&display=swap');
+
+*,
+*::before
+{}
+
+/* styles for different browsers to display the same */
+*::after
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Convergence', sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  background-color: #060b23;
+}
+
+/* styles for page content */
+.form
+{
+  position: relative;
+  width: 20rem;
+  /* the size of the input field */
+  height: 0.3rem;
+
+}
+
+.form-input
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e1e5ee;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+  /* for smooth transition effects */
+  transition: all 160ms ease-in;
+}
+
+/* when hovered and focused, the border of input element color changes */
+.form-input:hover
+{
+  border-color: #adffff;
+}
+
+.form-input:focus
+{
+  border-color: #18ffff;
+}
+
+/* styles for form label */
+.form-label
+{
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: #fff;
+  cursor: text;
+  transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+  background-color: #060b23;
+}
+
+
+/* to apply styles to 'form-label' when 'form-input' is focused */
+/* and when the placeholder is not showing, and 'form-input' is not focused (when click outside
+, */
+.form-input:focus~.form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-label
+{
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
