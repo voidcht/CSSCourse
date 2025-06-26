@@ -15,8 +15,10 @@
 
 .signin-window
 {
+  position: relative;
   width: 240px;
   background-color: black;
+  height: 400px;
   color: white;
   padding: 8px 92px;
   border-radius: 16px;
@@ -24,9 +26,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
+/* close button for the signin-window */
 .close-button
 {
   position: absolute;
@@ -44,19 +46,25 @@
   background-color: rgb(36, 36, 36);
 }
 
+/* logo styles on top of sign-in window */
 .logo-window
 {
+  /* top: 0; */
   display: flex;
+  align-items: center;
   justify-content: center;
+  background-color: rebeccapurple;
 }
 
-.logo-image-window
+.signin-logo-image
 {
   width: 40px;
   height: 40px;
   object-fit: cover;
   margin-bottom: 16px;
 }
+
+
 
 .divider-text-overlay
 {
@@ -71,53 +79,86 @@
   z-index: 600;
 }
 
-.signin-window .title
+.signin-title
 {
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
   font-family: Tahoma;
 }
 
-.input-prefix
+/* styles for input box with inner label */
+.input-box
 {
-  display: inline-block;
-
+  position: relative;
+  width: 90%;
+  /* height for the input box */
+  height: 42px;
 }
 
-.innerlabel
+.signin-input
+{
+
+
+  width: 100%;
+  height: 100%;
+  padding-left: 8px;
+  padding-top: 12px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: 0.01px solid rgba(77, 76, 76, 0.9);
+  transition: all 160ms ease-in;
+}
+
+
+.input-label
 {
   position: absolute;
-  padding-left: 8px;
-  padding-top: 4px;
-  font-size: 10px;
-  color: rgb(29, 155, 240);
-  opacity: 0;
-}
-
-input
-{
-  background-color: black;
-  color: white;
-  border: 0.01px solid rgba(77, 76, 76, 0.9);
-  width: 90%;
-  border-radius: 8px;
-  padding: 18px 8px;
+  left: 12px;
+  top: 12px;
+  padding: 0px 2px;
+  cursor: text;
   font-size: 14px;
-  margin-bottom: 24px;
+  color: rgb(77, 77, 77);
+  /* color: rgb(29, 155, 240); */
+  transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
 }
 
-input:focus
+.signin-input:hover
+{
+  border-color: rgb(11, 64, 99);
+}
+
+.signin-input:focus
 {
   border-color: rgb(29, 155, 240);
-  /* to change the border color */
-  outline: none !important;
+
 }
 
-.signin-input:focus .innerlabel
+.signin-input:focus+.input-label
+/* ,.signin-input:valid+.input-label */
+
+,
+.signin-input:not(:placeholder-shown).signin-input:not(:focus)~.input-label
 {
-  opacity: 1;
+  top: 6px;
+  left: 4px;
+  font-size: 12px;
 }
 
+.signin-input:not(:placeholder-shown).signin-input:focus~.input-label
+{
+  color: rgb(29, 155, 240);
+}
+
+
+
+/* styles for other buttons */
 .next-button
 {
   color: black;

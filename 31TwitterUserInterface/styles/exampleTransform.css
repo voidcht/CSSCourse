@@ -1,0 +1,17 @@
+section
+{
+  display: inline-block;
+  border: 10px solid #aaa;
+  transform: perspective(500px) rotateY(-60deg);
+  /* to share the same 3D space by child elements of this */
+  transform-style: preserve-3d;
+}
+
+div
+{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  /* rotate 60 degrees along y-axis with perspective */
+  transform: perspective(500px) rotateY(60deg);
+}

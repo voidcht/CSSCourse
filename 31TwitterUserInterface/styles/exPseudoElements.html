@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example CSS Pseudo-elements</title>
+    <style>
+      /* pseudo-elements with :: */
+      /* changes the first line of the <p> elements */
+      p::first-line {
+        color: blue;
+        font-variant: small-caps;
+      }
+
+      /* changes the first letter of the paragraph */
+      p::first-letter {
+        color: red;
+        font-size: xx-large;
+      }
+
+      /* applies the styles by the class name*/
+      .className::first-letter {
+        color: orange;
+        font-size: xx-large;
+      }
+
+      /* inserts the image before the <h1> element */
+      h1::before {
+        content: url("/public/icons/youtube-logo.svg");
+      }
+
+      /* inserts the content with styles specified after the <p> elements */
+      p::after {
+        content: 'abcd';
+        margin: 4px;
+        border: 1px solid red;
+      }
+
+      /* changes the markers of list items */
+      ::marker {
+        color: violet;
+        font-size: 24px;
+      }
+
+      /* changes the style of the selected content by the user */
+      ::selection {
+        color: red;
+        background: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="className">Hello there!</div>
+    <p>Hello there! I am a paragraph element. This is the content of mine. This is the content of mine. This is the
+      content of mine.
+      This is the content of mine.This is the content of mine.This is the content of mine.
+    </p>
+    <h1>I am H1 element</h1>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+  </body>
+
+</html>
