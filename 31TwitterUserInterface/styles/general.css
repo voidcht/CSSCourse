@@ -7,7 +7,10 @@ body
   font-size: 14px;
   /* new styles for body and html for the footer to work */
   margin: 0;
+  padding: 0;
   height: 100%;
+  box-sizing: border-box;
+
 }
 
 /* new container for the page */
