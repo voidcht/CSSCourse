@@ -1,5 +1,4 @@
-/* style scroll bar */
-.overlay-window::-webkit-scrollbar
+style scroll bar .overlay-window::-webkit-scrollbar
 {
   width: 8px;
   /* width of the scrollbar */
@@ -40,6 +39,8 @@
 .overlay
 {
   background-color: rgba(91, 112, 131, 0.4);
+  /* changed to fixed from absolute to fill whole page instead of
+  view port in smaller view ports */
   position: fixed;
   top: 0;
   bottom: 0;
@@ -52,8 +53,6 @@
   /* allow scrolling */
   /* overflow-y: auto; */
   padding: 32px;
-
-
 }
 
 .overlay-window
@@ -77,8 +76,6 @@
     align-items: flex-start;
     padding-top: 20px;
   }
-
-
 }
 
 
@@ -100,6 +97,7 @@
   background-color: rgb(36, 36, 36);
 }
 
+/* styles fot the logo on top of modal */
 .logo-container
 {
   /* background-color: purple; */
@@ -128,6 +126,8 @@
   margin-top: 24px;
 }
 
+
+/* styles for the divider with text on top */
 .window-divider
 {
   /* background-color: rgb(146, 125, 132); */
@@ -155,6 +155,7 @@
   padding: 4px 6px;
 }
 
+/* styles for input with inner label */
 .input-box
 {
   position: relative;
