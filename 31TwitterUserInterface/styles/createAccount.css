@@ -1,0 +1,108 @@
+.input-box
+{
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+  border: 0.01px solid rgba(77, 76, 76, 0.9);
+  border-radius: 4px;
+}
+
+.signin-input
+{
+  /* width: 100%; */
+  margin: 2px 6px;
+  padding-top: 12px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  color: white;
+  background: none;
+  border: none;
+  transition: all 160ms ease-in;
+}
+
+
+.create-account-form-container
+{
+  margin-top: 24px;
+}
+
+.space-bottom
+{
+  margin-bottom: 24px;
+}
+
+.create-account-window
+{
+  width: 300px;
+  padding: 1px 80px 0px 80px;
+}
+
+.mini-title
+{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Arial;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+.info-text
+{
+  color: rgb(113, 118, 123);
+  font-size: 11px;
+  margin-top: 8px;
+  line-height: 14px;
+}
+
+.birthday-input-container
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.dropdown-date-select
+{
+  background-color: black;
+  padding-bottom: 6px;
+
+
+}
+
+.input-box:hover~.signin-input
+{
+  border-color: rgb(29, 155, 240);
+}
+
+.month-input
+{
+  width: 120px;
+
+}
+
+.day-input
+{
+
+  width: 60px;
+}
+
+.year-input
+{
+  width: 80px;
+}
+
+.next-button:disabled,
+button[disabled]
+{
+  background-color: gray;
+  pointer-events: none;
+
+}

@@ -66,17 +66,7 @@
 
 }
 
-.link-text
-{
-  color: rgb(29, 155, 240);
-  cursor: pointer;
-  text-decoration: none;
-}
 
-.link-text:hover
-{
-  text-decoration: underline;
-}
 
 .subtitle
 {
