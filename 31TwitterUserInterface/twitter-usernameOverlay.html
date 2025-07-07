@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account overlay</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <!-- for overlay -->
+    <link rel="stylesheet" href="styles/overlaywindow.css">
+    <!-- for create account window -->
+    <link rel="stylesheet" href="styles/createAccount.css">
+
+
+    <!-- styles unique to this page -->
+    <link rel="stylesheet" href="styles/usernameOverlay.css">
+
+    <!-- font for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+
+      <!-- Sign-in option -overlay window as a Modal -->
+      <div class="overlay">
+        <div class="overlay-window create-account-window">
+          <!-- close button -->
+          <div class="close-button">X</div>
+          <!-- logo -->
+          <div class="logo-container">
+            <img src="/31TwitterUserInterface/images/x-logo.avif" alt="" class="signin-logo-image">
+          </div>
+          <!-- title -->
+          <div class="signin-title create-title">
+            What should we call you?
+          </div>
+          <!-- info -->
+          <div class="info-text username-info">
+            Your @username is unique. You can always change it later.
+          </div>
+
+          <div class="create-account-form-container ">
+            <form action="" name="create-account-form">
+              <!-- input boxes-->
+              <div class="input-box ">
+                <!--@ symbol start of the input-->
+                <span class="symbol-input username-input-symbol">&#x40;</span>
+                <input class="signin-input" id="username" type="text" name="username" placeholder=" ">
+                <label class="username-input-label" for="username">Username</label>
+
+
+
+
+                <!--tick mark for username availability -->
+                <span class="input-tick-icon"><i class="fa-solid fa-circle-check"></i></span>
+
+              </div>
+          </div>
+
+          <!-- buttons -->
+          <button class="tertiary-button next-button marginTop">Next</button>
+
+          </form>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <!-- javascript to password toggle icon -->
+    <script src="usernameOverlay.js"></script>
+  </body>
+
+</html>

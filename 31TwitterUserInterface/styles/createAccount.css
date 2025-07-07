@@ -38,8 +38,9 @@
 
 .create-account-window
 {
-  width: 300px;
+  width: 320px;
   padding: 1px 80px 0px 80px;
+  /* background-color: purple; */
 }
 
 .mini-title
