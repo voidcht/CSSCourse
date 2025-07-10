@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxes</title>
+    <!-- CSS File for custom check boxes with images -->
+    <link rel="stylesheet" href="exCustomCheckbox.css">
+    <style>
+      /* to set the style for a replacement for check box */
+      /* .custom-checkbox-label::before {
+        background-image: url(../images/password-eye.png);
+      } */
+
+      /* + (adjacent sibling selector) makes sure you only change 
+        labels that directly follow the hidden checkbox in the markup. */
+      /* .custom-checkbox:checked+label::before {
+        background-image: url(../images/password-eye-no.png);
+      } */
+
+
+
+      /* styles for the label */
+
+      .custom-checkbox-label {
+        border: 1px solid #fff;
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        margin: 10px;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* styles for the content inserted into the label - a new element */
+      .custom-checkbox-label::before {
+        color: rgb(214, 26, 26);
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        /* background-color: white; */
+        /* background-image: url(../images/Google-icon.webp); */
+        /* border: 1px solid rgb(178, 78, 78); */
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 28px;
+        transition-duration: 0.4s;
+        transform: scale(1);
+      }
+
+      /* styles for the image inside the label */
+      .custom-checkbox-label img {
+        height: 100px;
+        width: 100px;
+        /* transition-duration: 0.2s;
+        transform-origin: 50% 50%; */
+      }
+
+      /*CHECKED STATE STYLES  */
+
+      /* checked styles for the label itself */
+      .custom-checkbox:checked+label {
+        border-color: #64be29;
+      }
+
+
+      /* checked styles for the content added to the label */
+      .custom-checkbox:checked+label::before {
+        content: "✓";
+        color: black;
+        background-image: url(../images/tech-image.png);
+        /* background-color: rgb(225, 200, 91); */
+        transform: scale(1);
+      }
+
+      /* checked styles for the image inside the label */
+      .custom-checkbox:checked+label img {
+        transform: scale(1.2);
+        box-shadow: 0 0 5px #333;
+        z-index: -1;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <!-- To include the name for the checkbox- we use <label> element,
+      linking with 'id' of <input> with 'for' of <label> - 
+        when you select the label text, the check box is selected -->
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label>
+    <br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label>
+    <br>
+
+    <hr>
+
+
+    <!-- custom checkbox with image -->
+    <input type="checkbox" id="checkbox-01">
+    <label for="checkbox-01">Checkbox 01</label>
+    <br>
+
+
+    <!-- checkbox with an image label -->
+    <input type="checkbox" id="checkbox-02">
+    <label for="checkbox-02">
+      <img style="width: 50px; height: 50px; object-fit: cover;" src="../images/apple-icon.png" alt="apple icon">
+    </label>
+    <br>
+
+
+    <!-- checkbox with image BUT without default check box + tick mark -->
+    <input class="custom-checkbox" style="display: none;" type="checkbox" id="checkbox-03">
+    <label class="custom-checkbox-label" for="checkbox-03">
+
+      <img src="../images/apple-icon.png" alt="apple icon">
+    </label>
+
+    <br>
+    <!-- checkbox with image & checked icon -->
+    <input class="pic-checkbox" type="checkbox" id="checkbox-04">
+    <label class="pic-checkbox-label" for="checkbox-04">
+      <img src="../images/tech-image.png" style="width: 200px; height: 200px; object-fit: cover;" alt="apple icon">
+    </label>
+    <!-- checkbox with image & checked icon -->
+    <input class="pic-checkbox" type="checkbox" id="checkbox-05">
+    <label class="pic-checkbox-label" for="checkbox-05">
+      <img src="../images/tech-image.png" style="width: 200px; height: 200px; object-fit: cover;" alt="apple icon">
+    </label>
+
+    <br>
+
+    <!-- checkbox with image & added image icon-->
+    <input class="img-checkbox" type="checkbox" id="checkbox-06">
+    <label class="img-checkbox-label" for="checkbox-06">
+      <img src="../images/health-image.jpg" style="width: 200px; height: 200px; object-fit: cover;" alt="apple icon">
+    </label>
+  </body>
+
+</html>

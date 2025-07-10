@@ -100,3 +100,34 @@ button
   transition: background-color 0.15s;
 
 }
+
+
+
+.tertiary-button:disabled,
+button[disabled]
+{
+  background-color: gray;
+  pointer-events: none;
+
+}
+
+
+/* styles for other buttons */
+.next-button
+{
+  color: black;
+  font-weight: 600;
+}
+
+.forgot-password-button
+{
+  font-weight: 800;
+  margin-bottom: 36px;
+}
+
+.signup-text
+{
+  color: gray;
+  margin-bottom: 32px;
+
+}

@@ -1,6 +1,6 @@
-.create-account-form-container
+.modal-form-container
 {
-  margin-top: 24px;
+  width: 100%;
 }
 
 .space-bottom
@@ -9,7 +9,22 @@
 }
 
 
+.mini-title
+{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Arial;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
 
+.info-text
+{
+  color: rgb(113, 118, 123);
+  font-size: 11px;
+  margin-top: 8px;
+  line-height: 14px;
+}
 
 .birthday-input-container
 {
@@ -35,17 +50,17 @@
 
 .month-input
 {
-  width: 120px;
+  width: 160px;
 
 }
 
 .day-input
 {
 
-  width: 60px;
+  width: 80px;
 }
 
 .year-input
 {
-  width: 80px;
+  width: 100px;
 }

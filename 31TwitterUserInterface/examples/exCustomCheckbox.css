@@ -1,0 +1,166 @@
+/* STYLES FOR -- PICTURE CHECK BOX */
+
+.pic-checkbox
+{
+  /* hide the default checkbox */
+  display: none;
+}
+
+.pic-checkbox-label
+{
+  display: inline-block;
+  position: relative;
+  /* margin: 10px; */
+  /* padding: 0.5px; */
+  border: 1px solid white;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* content inserted to label replacing the checkbox */
+.pic-checkbox-label::before
+{
+  content: " ";
+  display: block;
+  background-color: rgb(149, 219, 117);
+  color: white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  /* background-image: url(../images/Google-icon.webp); */
+  border-radius: 50%;
+  border: 1px solid rgb(31, 150, 71);
+  text-align: center;
+  /* line-height: 28px; */
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 100;
+}
+
+/* styles for the img */
+.pic-checkbox-label img
+{
+  /* to remove the default space of the image at the bottom, 
+  which is added because the parent has 'inline-block' */
+  display: block;
+  transition-duration: 0.21s;
+  transform-origin: 50% 50%;
+}
+
+/* CHECKED STATE STYLES */
+
+/* styles for the label */
+.pic-checkbox:checked+label
+{
+  border-color: rgb(26, 255, 0);
+}
+
+
+
+/* styles for the label's new content when checked */
+.pic-checkbox:checked+label::before
+{
+  content: "✓";
+  color: rgb(147, 147, 147);
+  /* background-image: url(../images/tech-image.png); */
+  transform: scale(1);
+}
+
+/* styles for the img inside the label when selected */
+.pic-checkbox:checked+label img
+{
+  transform: scale(1);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
+
+
+
+/* --------------------------------------------- */
+/* CUSTOM checkbox WITH IMAGE TICK */
+
+.img-checkbox
+{
+  /* hide the default checkbox */
+  display: none;
+}
+
+.img-checkbox-label
+{
+  display: inline-block;
+  position: relative;
+  /* margin: 10px; */
+  /* padding: 0.5px; */
+  border: 1px solid white;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* content inserted to label replacing the checkbox */
+.img-checkbox-label::before
+{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  z-index: 100;
+}
+
+/* styles for the img */
+.img-checkbox-label img
+{
+  /* to remove the default space of the image at the bottom, 
+  which is added because the parent has 'inline-block' */
+  display: block;
+  transition-duration: 0.21s;
+  transform-origin: 50% 50%;
+}
+
+/* CHECKED STATE STYLES */
+
+/* styles for the label - DOESN't WORK YET */
+.img-checkbox:checked+label
+{
+  border-color: rgb(26, 255, 0);
+}
+
+
+
+/* styles for the label's new content when checked */
+.img-checkbox:checked+label::before
+{
+  content: " ";
+  background-image: url('../images/icons/check.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  transform-origin: 50% 50%;
+  transform: scale(1);
+  border-radius: 50%;
+}
+
+/* styles for the img inside the label when selected */
+.img-checkbox:checked+label img
+{
+  transform: scale(1);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}

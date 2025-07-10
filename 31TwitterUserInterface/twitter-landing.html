@@ -10,62 +10,75 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/landing.css">
     <!-- for overlay -->
-    <link rel="stylesheet" href="styles/overlaywindow.css">
+    <link rel="stylesheet" href="styles/overlay.css">
   </head>
 
   <body>
     <div class="page-wrapper">
 
       <!-- Sign-in option -overlay window as a Modal -->
+
       <div class="overlay">
         <div class="overlay-window">
           <!-- close button -->
           <div class="close-button">X</div>
-          <!-- logo -->
-          <div class="logo-container">
-            <img src="/31TwitterUserInterface/images/x-logo.avif" alt="" class="signin-logo-image">
-          </div>
-          <!-- title -->
-          <div class="signin-title">
-            Sign in to X
-          </div>
 
-          <!-- sign in with buttons - from landing page -->
-          <div class="signin-buttons-container">
-            <div class="signup-with-button">
-              <img class="button-image" src="images/Google-icon.webp" alt="google icon">
-              Sign in with Google
+          <div class="modal-header">
+            <!-- logo -->
+            <div class="logo-container">
+              <img class="modal-logo-image" src="/31TwitterUserInterface/images/x-logo.avif" alt="">
             </div>
-            <div class="signup-with-button">
-              <img class="button-image" src="images/apple-icon.png" alt="google icon">
-              Sign in with Apple
+            <div class="title-container">
+              <!-- title -->
+              <div class="modal-title">
+                Sign in to X
+              </div>
             </div>
           </div>
 
-          <!-- divider in modal -->
-          <div class="window-divider">
-            <hr>
-            <div class="window-divider-text">or</div>
+
+          <div class="modal-body">
+
+
+            <!-- sign-in-with buttons - from landing page -->
+            <div class="modal-buttons-container">
+              <div class="signup-with-button">
+                <img class="button-image" src="images/Google-icon.webp" alt="google icon">
+                Sign in with Google
+              </div>
+              <div class="signup-with-button">
+                <img class="button-image" src="images/apple-icon.png" alt="google icon">
+                Sign in with Apple
+              </div>
+            </div>
+
+            <!-- divider in modal -->
+            <div class="window-divider">
+              <hr>
+              <div class="window-divider-text">or</div>
+            </div>
+
+            <!-- username input -->
+            <div class="input-box">
+              <input class="text-input" id="username" type="text" name="username" placeholder=" ">
+              <label class="input-label" for="username">Phone, email, or username</label>
+            </div>
+
+            <!--input buttons -->
+            <button class="tertiary-button next-button">Next</button>
+            <button class="secondary-button forgot-password-button">Forgot password?</button>
+
+            <!-- sign up link -->
+            <div class="signup-text"> Don't have an account? <a class="link-text" href="#">Sign up</a></div>
           </div>
 
-          <!-- username input -->
-          <div class="input-box">
-            <input class="signin-input" id="username" type="text" name="username" placeholder=" ">
-            <label class="input-label" for="username">Phone, email, or username</label>
+          <div class="modal-footer">
+
           </div>
-
-          <!--input buttons -->
-          <button class="tertiary-button next-button">Next</button>
-          <button class="secondary-button forgot-password-button">Forgot password?</button>
-
-          <!-- sign up link -->
-          <div class="signup-text"> Don't have an account? <a class="link-text" href="#">Sign up</a></div>
-
 
 
         </div>
       </div>
-
 
 
 
