@@ -1,0 +1,108 @@
+.info-select-accounts
+{
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(98, 98, 98);
+}
+
+.logo-container-bottom-space
+{
+  margin-bottom: 24px;
+}
+
+.accounts-container
+{
+  margin-left: 16px;
+}
+
+.follow-accounts-subtitle
+{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.account-image
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.account-suggestion-container
+{
+  display: flex;
+  padding: 8px 0;
+  /* background-color: white; */
+}
+
+.account-pic-container
+{
+  /* background-color: purple; */
+}
+
+.account-info-container
+{
+  /* background-color: gray; */
+  margin-left: 6px;
+}
+
+.account-info-header
+{
+  display: flex;
+  padding: 6px 0 4px 0;
+}
+
+.account-details
+{
+  flex: 1;
+}
+
+.account-name
+{
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.account-icon
+{
+  /* background-color: purple; */
+  margin-left: 4px;
+}
+
+.verified-icon-image
+{
+  width: 24px;
+  height: 24px;
+}
+
+.account-username
+{
+  color: rgb(126, 126, 126);
+  line-height: 24px;
+}
+
+.follow-button-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-button
+{
+  font-size: 16px;
+  padding: 8px 16px;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  margin-bottom: 8px;
+}
+
+.account-bio
+{
+  font-size: 14px;
+  line-height: 20px;
+}
