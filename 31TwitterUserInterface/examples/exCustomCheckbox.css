@@ -164,3 +164,80 @@
   box-shadow: 0 0 5px #333;
   z-index: -1;
 }
+
+/* --------------------------------------------- */
+/* CUSTOM checkbox WITH IMAGE WHITE TICK */
+.img-white-checkbox-label
+{
+  display: inline-block;
+  position: relative;
+  /* margin: 10px; */
+  /* padding: 0.5px; */
+  border: 1px solid white;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* content inserted to label replacing the checkbox */
+.img-white-checkbox-label::before
+{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  z-index: 100;
+}
+
+/* styles for the img */
+.img-white-checkbox-label img
+{
+  /* to remove the default space of the image at the bottom, 
+  which is added because the parent has 'inline-block' */
+  display: block;
+  transition-duration: 0.21s;
+  transform-origin: 50% 50%;
+}
+
+/* CHECKED STATE STYLES */
+
+/* styles for the label - DOESN't WORK YET */
+.img-checkbox:checked+.img-white-checkbox-label
+{
+  border-color: rgb(69, 143, 222);
+  border-width: 2px;
+  box-shadow: 0 0 10px rgb(69, 143, 222);
+}
+
+
+
+/* styles for the label's new content when checked */
+.img-checkbox:checked+.img-white-checkbox-label::before
+{
+  content: " ";
+  background-image: url('../images/icons/white-tick.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  transform-origin: 50% 50%;
+  transform: scale(1);
+  border-radius: 50%;
+}
+
+/* styles for the img inside the label when selected */
+.img-checkbox:checked+label img
+{
+  transform: scale(1);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
